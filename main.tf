@@ -54,7 +54,7 @@ resource "aws_subnet" "subnet1c_TRUST" {
   map_public_ip_on_launch = false
 
   tags {
-    Name = "${var.tag}"
+    Name = "private_subnet_1c"
   }
 }
 
