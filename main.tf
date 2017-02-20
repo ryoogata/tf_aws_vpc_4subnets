@@ -63,7 +63,7 @@ resource "aws_internet_gateway" "gw" {
   vpc_id = "${aws_vpc.main.id}"
 
   tags {
-    Name = "private_subnet_1c"
+    Name = "${var.tag}"
   }
 }
 
